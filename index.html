@@ -5,14 +5,24 @@
 	<!-- Mobile Responsiveness Tag -->
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
+	<title>Edu Faminialagao Lago</title>
+
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="./index.css">
+
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
 	<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">	
-	<title>Edu Faminialagao Lago</title>
+	
 </head>
 
 <body>
 		<!-- Navbar Start -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 			<a class="navbar-brand" href="#landing">Edu Faminialagao lago</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navburger" aria-controls="navburger" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -37,24 +47,24 @@
 	<div class="container-fluid">
 	  	<div class="row" id="landing">
 		<div class="p-2 bg-secondary d-lg-flex d-xl-flex d-md-flex col-xl-12 col-lg-12 col-md-12 col-s-12 col-xs-12">
-			<div class="col-xl-3 col-lg-3 col-md-4 col-s-12 col-xs-12">
-				<img src="./DP.jpg" width="200" class="my-5 ml-5 mr-auto rounded-circle ">
+			<div class="col-xl-3 col-lg-3 col-md-4 col-s-12 col-xs-12 img-fluid">
+				<img src="./DP.jpg" width="200" class="mt-5 mb-3 ml-5 mr-auto rounded-circle pt-4 pl-3">
 			</div>
 			<div class="pt-5 mt-5 col-xl-9 col-lg-9 col-md-8 col-s-12 col-xs-12">
 				<h1>Edu Faminialagao Lago</h1>
 				<h3>Full Stack Web Developer</h3>
-				<p>A graduate of Bachelor of Science in Civil Engineering. Graduated at National University - Manila in year 2021</p>
-				<p>Who wants to pursue a career as a full stack web developer</p>
+				<p>A graduate of Bachelor of Science in Civil Engineering. Graduated at National University - Manila in year 2021,</p>
+				<p>who wants to pursue a career as a full stack web developer.</p>
 			</div>
 		</div>
-	  </div>	
+	</div>	
 		<!-- Landing Ends -->
 
 		<!-- Projects Starts -->
-		<div>
-			<h3 class="text-center mt-4" id=projects>My Projects</h3>
+		<div id="projects">
+			<h3 class="text-center mt-5">My Projects</h3>
 				<div>	
-						<div class="d-lg-flex justify-content-center p-md-5">
+						<div class="d-lg-flex justify-content-center px-md-5 pt-md-5">
 							
 							<!-- HTML Card -->
 							<div class="card bg-muted col-xl-4 mb-5 mb-xl-0 mx-2">
@@ -70,7 +80,7 @@
 							  <div class="card-body">
 							  	<img src="Projects.png" class="card-img-top">
 							    <h5 class="card-title text-center mt-3">Projects</h5>
-							    <p class="card-text text-center">Project is one the basis for employment</p>
+							    <p class="card-text text-center">Work done projects is basicaly one of the references for employment</p>
 							  </div>
 							</div>
 
@@ -79,7 +89,7 @@
 							  <div class="card-body">
 							  	<img src="SampleWebsite.png" class="card-img-top">
 							    <h5 class="card-title text-center mt-3">Simple Website</h5>
-							    <p class="card-text text-center">Sometimes simple website is more responsive than the over design website specially to those have a slow connection</p>
+							    <p class="card-text text-center">Sometimes simple website is more responsive than the over design website specially to those have a slow internet connection</p>
 							  </div>
 							</div>
 						</div>
@@ -89,9 +99,8 @@
 	
 	    <!-- Tools Start -->	
 	<div id="tools">
-
         <div>
-        <h3 class="text-center">Front End</h3>
+        <h3 class="text-center mt-5">Front End</h3>
 
                 <div class="d-md-flex justify-content-center">
                     <img width="120" src="./html.png" />
@@ -121,21 +130,50 @@
     </div>
     <!-- Tools End -->
 
-    <!-- Contacts -->
-    <div class="bg-secondary d-lg-flex d-xl-flex d-md-flex row pb-2" id="contact">
-    	<h6 class="ml-2 col-12 pt-3 text-light">Contacts:</h6>
+    <!-- Contacts Start-->
+	<div class="pt-5 mt-3" id="contact">
+		<h2 class="text-center">Contact Me</h2>
+		<div class="row mt-3 justify-content-center">
+			<div class="col-s-12 col-xs-12 col-md-9 col-lg-9 col-xl-7 card bg-primary text-white mb-4 text-center">
+				<form id="form-col">
+				    <div class="form-group">
+					    <label class="mt-2">Full Name</label>
+					    <input type="text" class="form-control" required="">
+					 </div>
+				 	 <div class="form-group">
+				        <label>Email Address</label>
+   						<input type="email" class="form-control" required="">
+				 	 </div>
+				 	 <div class="form-group">
+				        <label>Contact Number</label>
+   						<input type="tel" class="form-control" required>
+				 	 </div>
+				 	 <div class="form-group">
+					    <label>Message</label>
+					    <textarea class="form-control" rows="4"></textarea>
+					 </div>
+						<button type="submit" class="bg-secondary btn btn-primary mb-2 text-light"> Send </button>
+				</form>
+    		</div>
+   		</div>
+
+    <div class="bg-secondary d-lg-flex d-xl-flex d-md-flex row pb-2">
+    	<h6 class="ml-2 col-12 pt-3 text-light">OTHER ACCOUNTS:</h6>
     	<a href="https://fb.com/protocol1995">
   			<img src="./fb.png" alt="Clickable Image" class="rounded-circle mx-2 pl-2 mt-2" width="50">
 		</a>
-		<a href="https://fb.com/protocol1995">
+		<a href="https://www.linkedin.com/in/edu-lago-70b18b1b6/">
   			<img src="./linkedin.png" alt="Clickable Image" class="rounded-circle mx-2 pl-2 mt-2" width="50">
 		</a>
 		<a href="https://gitlab.com/edulago1995">
   			<img src="./git.png" alt="Clickable Image" class="rounded-circle mx-2" width="60">
 		</a>
+		<a href="https://www.youtube.com/@edulago5217">
+  			<img src="./yt.avif" alt="Clickable Image" class="rounded-circle mx-2" width="60">
+		</a>
     </div>
-
 	</div>
+	<!-- Contacts End-->
 
 	<!-- Bootstrap JS -->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
